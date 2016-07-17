@@ -1,3 +1,48 @@
-body{
-  background: orange;
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow: auto;
+  line-height: 1.4rem;
+  overflow: hidden;
+}
+.container{
+  margin: 0;
+  padding-top: 5rem;
+  width: 100%;
+  height:100%;
+  border: 4px solid black;
+  box-sizing: border-box;
+}
+.content{
+  width: 65%;
+  min-height: 100%;
+  margin: 0 auto;
+  text-align: left;
+  h1{
+    text-align: center;
+  }
+}
+.logo-holder{
+  width: 100%;
+  text-align: center;
+}
+.location-form{
+  display: none;
+  margin: 3rem auto 0 auto;
+  text-align: center;
+}
+input[type="text"]{
+  width: 60%;
+}
+h2{
+  line-height: 2rem;
+}
+@media screen and (min-width: 42rem){
+  .description, form{
+    width: 60%;
+    margin: auto;
+  }
 }
