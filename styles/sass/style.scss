@@ -25,6 +25,7 @@ html, body{
 }
 .pac-container{
   top: 170px !important;
+  z-index: 1;
 }
 .pac-container:after{
   background-image: none !important;
@@ -60,10 +61,5 @@ h2{
   }
   .location-form, .pac-container{
     width: 65% !important;
-  }
-}
-@media screen and (max-width: 320px){
-  .pac-container{
-    top: 230px !important;
   }
 }
