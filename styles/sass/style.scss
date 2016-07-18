@@ -6,24 +6,32 @@ html, body{
   background: white;
   overflow: auto;
   line-height: 1.4rem;
-  overflow: hidden;
 }
 .container{
   margin: 0;
-  padding-top: 5rem;
+  padding-top: 1rem;
   width: 100%;
   height:100%;
   border: 4px solid black;
   box-sizing: border-box;
 }
-.content{
+.intro{
   width: 65%;
-  min-height: 100%;
   margin: 0 auto;
   text-align: left;
   h1{
     text-align: center;
   }
+}
+.pac-container{
+  top: 210px !important;
+}
+.pac-container:after{
+  background-image: none !important;
+  height: 0;
+}
+.pac-icon{
+  display: none;
 }
 .logo-holder{
   width: 100%;
@@ -31,18 +39,31 @@ html, body{
 }
 .location-form{
   display: none;
+  width: 100%;
   margin: 3rem auto 0 auto;
   text-align: center;
 }
 input[type="text"]{
-  width: 60%;
+  width: 80%;
+  margin: auto;
+  bottom: 0;
+  display: block;
+  margin-bottom: 1rem;
 }
 h2{
   line-height: 2rem;
 }
 @media screen and (min-width: 42rem){
-  .description, form{
+  .description{
     width: 60%;
     margin: auto;
+  }
+  .location-form, .pac-container{
+    width: 30rem !important;
+  }
+}
+@media screen and (max-width: 320px){
+  .pac-container{
+    top: 230px !important;
   }
 }
