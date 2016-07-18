@@ -62,3 +62,8 @@ h2{
     width: 30rem !important;
   }
 }
+@media screen and (max-width: 320px){
+  .pac-container{
+    top: 230px !important;
+  }
+}
